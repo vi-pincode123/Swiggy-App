@@ -1,0 +1,32 @@
+.im-stepper {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  border-radius: 9px;
+  background: #1d4ed8;
+  color: #fff;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.im-stepper__btn {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 100%;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.im-stepper__btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.im-stepper__value {
+  display: grid;
+  place-items: center;
+  min-width: 20px;
+  height: 100%;
+  font-size: 0.78rem;
+  font-weight: 800;
+}

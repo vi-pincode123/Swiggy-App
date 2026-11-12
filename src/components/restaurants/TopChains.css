@@ -1,0 +1,7 @@
+.chain-section {
+  padding: clamp(20px, 2.8vw, 34px) 0 clamp(10px, 1.6vw, 16px);
+}
+
+.chain-section .section-header {
+  margin-bottom: clamp(16px, 2vw, 24px);
+}

@@ -1,0 +1,337 @@
+.im-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.im-account__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 0 20px;
+  text-align: center;
+}
+
+.im-account__hero-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 6px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eff5ff, #dbe8ff);
+  color: #1d4ed8;
+}
+
+.im-account__hero h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+}
+
+.im-account__hero p {
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.im-account__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.im-account__label {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.im-account__phone {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #dbe3ef;
+  border-radius: 11px;
+  background: #fbfcfe;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.im-account__phone:focus-within {
+  border-color: #93b4f7;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.im-account__phone.has-error {
+  border-color: #f2a7a7;
+}
+
+.im-account__prefix {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 0 12px;
+  border-right: 1px solid #e6ebf3;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.im-account__phone input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 12px;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.im-account__otp {
+  height: 52px;
+  border: 1px solid #dbe3ef;
+  border-radius: 11px;
+  background: #fbfcfe;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.55em;
+  text-align: center;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.im-account__otp:focus {
+  border-color: #93b4f7;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.im-account__otp.has-error {
+  border-color: #f2a7a7;
+}
+
+.im-account__otp::placeholder {
+  color: #c5cddb;
+  letter-spacing: 0.45em;
+}
+
+.im-account__error {
+  color: #b91c1c;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.im-account__notice {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #ecfdf3;
+  color: #057a3f;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.im-account__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 46px;
+  margin-top: 6px;
+  border-radius: 11px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(252, 128, 25, 0.24);
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.im-account__submit:hover {
+  background: var(--orange-600);
+  box-shadow: 0 12px 26px rgba(252, 128, 25, 0.3);
+}
+
+.im-account__demo {
+  margin-top: 14px;
+  padding: 9px 11px;
+  border-radius: 9px;
+  border: 1px dashed #d5e2f8;
+  background: #f6f9ff;
+  color: #3b5a97;
+  font-size: 0.73rem;
+  text-align: center;
+}
+
+.im-account__demo strong {
+  color: #1d4ed8;
+}
+
+.im-account__terms {
+  margin-top: 12px;
+  color: #939aab;
+  font-size: 0.68rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.im-account__back {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.im-account__back:hover {
+  color: #1d4ed8;
+}
+
+.im-account__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.im-account__links button {
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.im-account__links button:hover {
+  text-decoration: underline;
+}
+
+.im-account__profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e7edf8;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+}
+
+.im-account__avatar {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #1d4ed8;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 8px 18px rgba(29, 78, 216, 0.24);
+}
+
+.im-account__greeting {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.im-account__name {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.im-account__profile-phone {
+  margin-top: 1px;
+  color: #3b5a97;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.im-account__card {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #eef1f7;
+  border-radius: 14px;
+  background: #fbfcfe;
+}
+
+.im-account__card-title {
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.im-account__perks {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.im-account__perks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.im-account__perks svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #1d4ed8;
+}
+
+.im-account__perks strong {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.im-account__demo-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 14px;
+  color: #939aab;
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.im-account__logout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 42px;
+  margin-top: 16px;
+  border: 1px solid #e6eaf2;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.im-account__logout:hover {
+  border-color: #f2c9c9;
+  background: #fff5f5;
+  color: #b91c1c;
+}

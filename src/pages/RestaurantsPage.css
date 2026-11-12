@@ -1,0 +1,18 @@
+.restaurants-page {
+  min-height: 100vh;
+  background: var(--page);
+}
+
+.restaurants-page main {
+  display: block;
+}
+
+.restaurants-page #restaurants-near-you {
+  scroll-margin-top: calc(76px + 16px);
+}
+
+@media (max-width: 900px) {
+  .restaurants-page #restaurants-near-you {
+    scroll-margin-top: calc(72px + 12px);
+  }
+}

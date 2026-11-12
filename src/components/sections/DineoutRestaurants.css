@@ -1,0 +1,169 @@
+.dineout-card {
+  width: 292px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #efeff2;
+  box-shadow: 0 8px 22px rgba(28, 28, 28, 0.06);
+  transition:
+    transform 0.26s ease,
+    box-shadow 0.26s ease,
+    border-color 0.26s ease;
+}
+
+.dineout-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffd7b1;
+  box-shadow: 0 18px 36px rgba(28, 28, 28, 0.12);
+}
+
+.dineout-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.dineout-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.dineout-card:hover .dineout-card__media img {
+  transform: scale(1.06);
+}
+
+.dineout-card__offer {
+  position: absolute;
+  left: 11px;
+  bottom: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: calc(100% - 22px);
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--orange-700);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  box-shadow: 0 6px 14px rgba(28, 28, 28, 0.16);
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dineout-card__body {
+  padding: 14px 16px 16px;
+}
+
+.dineout-card__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dineout-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.dineout-card:hover .dineout-card__name {
+  color: var(--orange-700);
+}
+
+.dineout-card__rating {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: #1f8a4c;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.dineout-card__cuisines {
+  margin-top: 5px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dineout-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px dashed #ececef;
+  font-size: 0.73rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.dineout-card__price {
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.dineout-card__dot {
+  width: 3px;
+  height: 3px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #c4c4cb;
+}
+
+.dineout-card__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dineout-card__location svg {
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .dineout-card {
+    width: 252px;
+    border-radius: 16px;
+  }
+
+  .dineout-card__body {
+    padding: 12px 13px 14px;
+  }
+
+  .dineout-card__name {
+    font-size: 0.94rem;
+  }
+
+  .dineout-card__cuisines {
+    font-size: 0.73rem;
+  }
+
+  .dineout-card__meta {
+    font-size: 0.69rem;
+  }
+}

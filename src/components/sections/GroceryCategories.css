@@ -1,0 +1,99 @@
+.grocery-section {
+  position: relative;
+  background: linear-gradient(180deg, #f5fcf7 0%, #eefaf2 100%);
+  border-block: 1px solid #e2f3e7;
+}
+
+.grocery-card {
+  width: 164px;
+  padding: 9px 9px 13px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e6f1e9;
+  box-shadow: 0 6px 18px rgba(15, 80, 45, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.grocery-card:hover {
+  transform: translateY(-4px);
+  border-color: #b9e3c7;
+  box-shadow: 0 14px 28px rgba(15, 80, 45, 0.11);
+}
+
+.grocery-card__media {
+  position: relative;
+  border-radius: 11px;
+  overflow: hidden;
+  aspect-ratio: 1 / 0.86;
+  background: #f1f7f3;
+}
+
+.grocery-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.grocery-card:hover .grocery-card__media img {
+  transform: scale(1.05);
+}
+
+.grocery-card__time {
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--green-600);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 8px rgba(15, 80, 45, 0.12);
+}
+
+.grocery-card__body {
+  padding: 10px 3px 0;
+}
+
+.grocery-card__name {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.grocery-card__offer {
+  margin-top: 3px;
+  font-size: 0.67rem;
+  font-weight: 600;
+  color: var(--green-600);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .grocery-card {
+    width: 140px;
+    padding: 8px 8px 11px;
+    border-radius: 14px;
+  }
+
+  .grocery-card__name {
+    font-size: 0.79rem;
+  }
+
+  .grocery-card__offer {
+    font-size: 0.63rem;
+  }
+}

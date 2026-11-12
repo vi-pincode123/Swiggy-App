@@ -1,0 +1,9 @@
+.popular-section {
+  padding: clamp(30px, 4vw, 46px) 0 clamp(34px, 4.4vw, 54px);
+  border-top: 1px solid #f4f4f6;
+  margin-top: clamp(14px, 2vw, 22px);
+}
+
+.popular-section .section-header {
+  margin-bottom: clamp(16px, 2vw, 24px);
+}

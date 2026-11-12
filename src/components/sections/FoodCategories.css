@@ -1,0 +1,135 @@
+.food-section {
+  padding-top: clamp(30px, 4vw, 48px);
+}
+
+.food-card {
+  width: 132px;
+  text-align: center;
+}
+
+.food-card__image {
+  position: relative;
+  width: 118px;
+  height: 118px;
+  margin: 0 auto 12px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #f1e8de;
+  box-shadow: 0 8px 20px rgba(76, 48, 19, 0.07);
+  transition:
+    border-color 0.24s ease,
+    box-shadow 0.24s ease,
+    transform 0.24s ease;
+}
+
+.food-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.food-card:hover .food-card__image {
+  border-color: var(--orange);
+  box-shadow: 0 12px 26px rgba(252, 128, 25, 0.2);
+  transform: translateY(-4px);
+}
+
+.food-card:hover .food-card__image img {
+  transform: scale(1.04);
+}
+
+.food-card__hover-icon {
+  position: absolute;
+  right: -2px;
+  bottom: 2px;
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  border: 2px solid #fff;
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+}
+
+.food-card:hover .food-card__hover-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.food-card__name {
+  font-size: 0.93rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food-card__offer {
+  margin-top: 3px;
+  font-size: 0.69rem;
+  font-weight: 600;
+  color: var(--orange-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 900px) {
+  .food-section {
+    padding-top: 38px;
+  }
+
+  .food-card {
+    width: 116px;
+  }
+
+  .food-card__image {
+    width: 102px;
+    height: 102px;
+    margin-bottom: 10px;
+  }
+
+  .food-card__name {
+    font-size: 0.86rem;
+  }
+
+  .food-card__offer {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .food-card {
+    width: 98px;
+  }
+
+  .food-card__image {
+    width: 88px;
+    height: 88px;
+    padding: 4px;
+    margin-bottom: 9px;
+  }
+
+  .food-card__hover-icon {
+    display: none;
+  }
+
+  .food-card__name {
+    font-size: 0.8rem;
+  }
+
+  .food-card__offer {
+    font-size: 0.61rem;
+  }
+}
